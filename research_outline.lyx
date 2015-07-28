@@ -1,0 +1,886 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+
+\renewcommand*\oldstylenums[1]{\textosf{#1}}
+
+\hyphenation{ge-ne-ra-tio-nal}
+\definecolor{slateblue}{RGB}{17, 83,128}
+\usepackage{doi}
+\end_preamble
+\options numbers,sort&compress
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman times
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_title "Experimental Setup Yeast"
+\pdf_author "B. Kuijper"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "urlcolor=slateblue,citecolor=slateblue,linkcolor=slateblue"
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2.5cm
+\rightmargin 3cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Experimental Evolution of Nongenetic Effects in
+\shape italic
+ 
+\shape default
+Fission Yeast:
+\shape italic
+ 
+\shape default
+Experimental Setup
+\end_layout
+
+\begin_layout Author
+Bram Kuijper
+\end_layout
+
+\begin_layout Section
+Background
+\end_layout
+
+\begin_layout Paragraph
+What are nongenetic effects and why do they evolve?
+\end_layout
+
+\begin_layout Standard
+Nongenetic effects refer to phenotypic effects in descendants that are brought
+ about by the transmission of factors other than sequences of DNA from parents
+ or more remote ancestors 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bonduriansky2009,Day2011,Jablonka2009,Danchin2011"
+
+\end_inset
+
+.
+ Underlying mechanisms include the transmission of DNA-methylation and histone
+ methylation variants 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Greer2012,Heard2014"
+
+\end_inset
+
+, small RNAs 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Liebers2014"
+
+\end_inset
+
+, maternal hormones 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Groothuis2008"
+
+\end_inset
+
+ and antibodies 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hasselquist2009"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+So far, most research on nongenetic effects has focused on the molecular
+ mechanisms underlying nongenetic effects (e.g., 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Heard2014,Rechavi2014,Rechavi2014a"
+
+\end_inset
+
+).
+ Much less thought has been given to questions at the ultimate level, such
+ as the evolutionary orgins of these nongenetic effects 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Uller2008"
+
+\end_inset
+
+ and when and where these nongenetic effects may be selectively advantageous.
+ However, this has all changed with the advent of a series of recent theoretical
+ studies, which have profided the field with a number of predictions about
+ the ecological contexts in which nongenetic effects are favored 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kuijper2014a,Kuijper2015,Leimar2015,English2015"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Prediction 1: heterogenous, autocorrelated environments favor nongenetic
+ effects.
+\end_layout
+
+\begin_layout Standard
+These novel models predict that nongenetic effects are selectively favored
+ in temporally or spatially variable environments, in which selective conditions
+ are correlated between subsequent generations 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kuijper2014a"
+
+\end_inset
+
+.
+ For example, in species with rapid exhaustion of resources due to population
+ growth, high levels of nutrition in the parental generation may induce
+ high fecundity and hence low levels of nutrition in the next generation
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Murdoch2003"
+
+\end_inset
+
+, resulting in a negative environmental correlation between generations.
+ As environments are correlated (either positively or negatively), any parental
+ cue about the parental environment (transmitted via these nongenetic effects)
+ may then be informative to the offspring about the environment that they
+ will face 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Uller2008,Shea2011"
+
+\end_inset
+
+.
+ Consequently, offspring could then develop an appropriate phenotypic response
+ based on this parental information, resulting in a form of transgenerational
+ plasticity 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Galloway2007,Uller2014a"
+
+\end_inset
+
+.
+ In other words, heterogeneous, autocorrelated environments, should favor
+ the evolution of parental influences on offspring phenotype determination.
+ However, in homogenous environments or those environments lacking any transgene
+rational autocorrelation, we should expect the role of nongenetic effects
+ to be much more limited.
+\end_layout
+
+\begin_layout Paragraph
+Prediction 2: the form of nongenetic effect depends on the specific environment.
+\end_layout
+
+\begin_layout Standard
+Another exciting prediction is that nongenetic effects may vary in the strength
+ and direction, dependent on the particular environment.
+ For example, recent models on parental effects found that negatively autocorrel
+ated environments (i.e., an environment that changes rapidly) should favor
+ 
+\shape italic
+negative
+\shape default
+ nongenetic effects, where offspring phenotypes are more different to their
+ parent's phenotype than to the phenotype of a random, unrelated individual
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kuijper2014a,Kuijper2015"
+
+\end_inset
+
+.
+ By contrast, in a positively autocorrelated environment (i.e., an environment
+ that changes slowly), positive nongenetic effects are favored, where offspring
+ phenotypes are more similar to their parent's phenotype relative to the
+ phenotype of a random, unrelated individual.
+\end_layout
+
+\begin_layout Standard
+Consequently, we not only have a theory that predicts when and where nongenetic
+ effects are favored, but also what shape they are likely to take, which
+ can be tested using quantitative genetics 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Danchin2011"
+
+\end_inset
+
+.
+ What is now needed are tests of these predictions.
+\end_layout
+
+\begin_layout Paragraph
+Testing the theory
+\end_layout
+
+\begin_layout Standard
+Armed with these theoretical predictions, we now need to device experiments
+ that enable us to test whether i) correlated environments indeed favor
+ the evolution of nongenetic effects and ii) whether different signs and
+ magnitudes of nongenetic effects are favored in different environments.
+ Microorganisms such as yeasts provide an ideal platform for this, as their
+ genetic architecture is extremely well understood 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kim2010,Botstein2011,Rhind2011,Jeffares2015"
+
+\end_inset
+
+ and they have fast generation time (2h in a benign environment).
+\end_layout
+
+\begin_layout Standard
+Existing studies on adaptation of yeast in fluctuating environments have
+ mainly focused on bet-hedging 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Seger1989,Starrfelt2012"
+
+\end_inset
+
+.
+ For example, a study by Acar and coworkers on 
+\shape italic
+Saccharomyces cerevisiae
+\shape default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Acar2008"
+
+\end_inset
+
+ showed that some mutants exhibit stochastic phenotype switching, whereby
+ descendant phenotypes attain a phenotype opposite to their parents.
+ They showed that such mutants are highly advantageous in fluctuating environmen
+ts, as the entailing phenotypic heterogeneity enhanced survival prospects
+ at the level of the genetic lineage.
+\end_layout
+
+\begin_layout Standard
+Stochastic phenotype switching studies highlight the potential for transgenerati
+onal phenotypic change in yeast.
+ However, phenotype switching is not the same as a nongenetic effect.
+ Strict definitions of phenotype switching assume that the mixture of offspring
+ phenotypes is uncorrelated to the phenotype of the parent 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Jong2011"
+
+\end_inset
+
+.
+ By contrast, the presence of a nongenetic effect necessarily implies that
+ the phenotype of offspring is, in some form, dependent on the phenotype
+ of its parent.
+ So far, studies of phenotype switching have paid little attention to the
+ important notion whether switching rates depend on the parental phenotype.
+\end_layout
+
+\begin_layout Section
+Questions
+\end_layout
+
+\begin_layout Standard
+My experiments aim to address the following two questions:
+\end_layout
+
+\begin_layout Enumerate
+Do nongenetic effects exist in fission yeast 
+\shape italic
+Schizosaccharomyces pombe
+\shape default
+?
+\end_layout
+
+\begin_layout Enumerate
+How much do different strains vary in the propensity for nongenetic effects?
+\end_layout
+
+\begin_layout Enumerate
+Can stronger or weaker nongenetic effects evolve by means of experimental
+ evolution?
+\end_layout
+
+\begin_layout Section
+Model organism: fission yeast
+\end_layout
+
+\begin_layout Standard
+Fission yeast 
+\shape italic
+Sz.
+ pombe
+\shape default
+ is a model organism that has been classically used for studies on cell
+ division and meiosis, as its chromosomal architecture is very similar to
+ higher eukaryotes.
+ Also, it has a substantial scope for nongenetic effects, as it has extensive
+ regions of epigenetically induced chromatin 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Cam2005,Ragunathan2014,Allshire2015,Audergon2015"
+
+\end_inset
+
+.
+ However, most of these heterochromatized regions are restricted to non-coding
+ regions (centromeres, telemeres) or regions with very particular biological
+ functions (mating type loci).
+ Beyond these genomic regions, however, it is poorly understood whether
+ nongenetic effects play a more general role in adaptation.
+ 
+\end_layout
+
+\begin_layout Standard
+Suggestions that nongenetic effects may be important in 
+\shape italic
+Sz.
+ pombe
+\shape default
+ stem from the notion that damaged proteins inherit asymmetrically upon
+ cell-division 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Erjavec2008"
+
+\end_inset
+
+, with most of the damaged proteins remaining in the parental cell.
+ This shows that cells have the machinery in place to adjust the amount
+ of proteins that can be transmitted to the daughter cell.
+ In addition, it is well known that severe stress leads cells to produce
+ stress granules, which are found in the cytoplasm and contain proteins,
+ mRNAs and non-coding RNAs 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Anderson2009"
+
+\end_inset
+
+.
+ Interestingly, such stress granules have been associated with nongenetic
+ inheritance (i.e., maternal inheritance) in multicellular organisms 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Rajyaguru2009"
+
+\end_inset
+
+, but the inheritance of stress granules in unicellular organisms has seen
+ surprisingly little attention.
+\end_layout
+
+\begin_layout Section
+Experiment 1: testing for the presence of nongenetic effects by exposing
+ consecutive generations to different environments
+\end_layout
+
+\begin_layout Subsection
+Experimental setup
+\end_layout
+
+\begin_layout Subsubsection
+Background
+\end_layout
+
+\begin_layout Standard
+I test for the presence of nongenetic effects by inoculating two environments
+ 
+\begin_inset Formula $F0(E1)$
+\end_inset
+
+ and 
+\begin_inset Formula $F0(E2)$
+\end_inset
+
+ with cells from the same colony.
+ Subsequently, we sample descendant cells from each of these treatments,
+ and expose half of these cells to treatment 
+\begin_inset Formula $E1$
+\end_inset
+
+ and the other half to treatment 
+\begin_inset Formula $E2$
+\end_inset
+
+, yielding four different combinations of exposure in 
+\begin_inset Formula $F0$
+\end_inset
+
+ and 
+\begin_inset Formula $F1$
+\end_inset
+
+ (see Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:experiment_1"
+
+\end_inset
+
+).
+ During the 
+\begin_inset Formula $F1$
+\end_inset
+
+ treatments, we measure growth rates as a measure of fitness.
+ If nongenetic effects would be absent, we would expect that any differences
+ in growth rate between 
+\begin_inset Formula $E1$
+\end_inset
+
+ and 
+\begin_inset Formula $E2$
+\end_inset
+
+ are independent of the parental environment.
+ That is, 
+\begin_inset Formula $F1(E1)_{F0(E1)}$
+\end_inset
+
+ (
+\begin_inset Formula $F1$
+\end_inset
+
+ exposed to 
+\begin_inset Formula $E1$
+\end_inset
+
+, parental generation exposed to 
+\begin_inset Formula $E1$
+\end_inset
+
+) has the same average growth rate as 
+\begin_inset Formula $F1(E1)_{F0(E2)}$
+\end_inset
+
+ (
+\begin_inset Formula $F1$
+\end_inset
+
+ exposed to 
+\begin_inset Formula $E1$
+\end_inset
+
+, parental generation exposed to 
+\begin_inset Formula $E2$
+\end_inset
+
+).
+ Similarly, 
+\begin_inset Formula $F1(E2)_{F0(E1)}$
+\end_inset
+
+ (
+\begin_inset Formula $F1$
+\end_inset
+
+ exposed to 
+\begin_inset Formula $E2$
+\end_inset
+
+, parental generation exposed to 
+\begin_inset Formula $E1$
+\end_inset
+
+) has the same average growth rate as 
+\begin_inset Formula $F1(E2)_{F0(E2)}$
+\end_inset
+
+ (
+\begin_inset Formula $F1$
+\end_inset
+
+ exposed to 
+\begin_inset Formula $E2$
+\end_inset
+
+, parental generation exposed to 
+\begin_inset Formula $E2$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Paragraph
+Problems with this approach
+\end_layout
+
+\begin_layout Standard
+One perceived problem with the current experimental setup is that each environme
+nt induces selection, so that cells sampled from the 
+\begin_inset Formula $F0(E1)$
+\end_inset
+
+ and 
+\begin_inset Formula $F0(E2)$
+\end_inset
+
+ treatments used to inoculate the respective 
+\begin_inset Formula $F1(E1)$
+\end_inset
+
+ and 
+\begin_inset Formula $F1(E2)$
+\end_inset
+
+ treatments may not be genetically identical.
+ As a consequence, differences in growth rates would then be genetic rather
+ than nongenetic.
+ However, we know that genetic variation in the standard 
+\begin_inset Formula $h^{+}$
+\end_inset
+
+ or 
+\begin_inset Formula $h^{-}$
+\end_inset
+
+ strains is generally very low 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Jeffares2015"
+
+\end_inset
+
+, thus limiting the response to selection.
+ Moreover, as we only use heterothallic strains, asexual reproduction further
+ limits an efficient response to selection 
+\end_layout
+
+\begin_layout Standard
+Perhaps we can say something about mutation rates as well limiting accumulation
+ of genetic variants? Although no direct measurements have been made of
+ the mutation rate in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{Sz.
+ pombe}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Brown2011"
+
+\end_inset
+
+, from 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{S.
+ cerevisiae}
+\end_layout
+
+\end_inset
+
+ we know that per-base mutation rate per generation is 
+\begin_inset Formula $10^{-10}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lang2008"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/exp1/experiment1.pdf
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Testing for the presence of nongenetic effects: experimental setup.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:experiment_1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/exp1_expectations/expectations.pdf
+	scale 250
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Expected fitness effects in the absence (panel A) or presence of nongenetic
+ effects (panels B, C).
+ In the absence of nongenetic effects, we would expect fitness differences
+ to be caused by the current environment, whereas the previous environment
+ does not affect 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:expectations_exp_1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Experimental setup
+\end_layout
+
+\begin_layout Paragraph
+Environmental stressors
+\end_layout
+
+\begin_layout Standard
+I aim to explore the role of nongenetic effects across a number of environmental
+ stresses, as we currently do not know whether nongenetic effects are restricted
+ to specific forms of stress or have a general function over different stresses.
+ I will use the following three stresses: (i) temperature, (ii) osmotic
+ stress, (iii) oxidative stress.
+ All these stresses have the advantage that they have been rather well explored
+ in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{Sz.
+ pombe}
+\end_layout
+
+\end_inset
+
+ at the within-generational level (e.g., 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Chen2003,Madrid2006,Lackner2012"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Paragraph
+Lines
+\end_layout
+
+\begin_layout Standard
+Initially, I will use Leupold's 
+\begin_inset Formula $h^{90}$
+\end_inset
+
+ (968), 
+\begin_inset Formula $h^{+}$
+\end_inset
+
+(975) and 
+\begin_inset Formula $h^{-}$
+\end_inset
+
+(972) strains, to compare asexual and sexual reproduction.
+ Existing verbal studies predict that nongenetic effects should be more
+ powerful in asexual taxa, so it would be ideal to compare the strength
+ of nongenetic effects in heterothallic and homothallic strains 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Verhoeven2013"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Plating
+\end_layout
+
+\begin_layout Paragraph
+Growth rate measurements
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+scriptsize
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "/home/bram/Projects/databases/transgenerational"
+options "procbnumer"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
