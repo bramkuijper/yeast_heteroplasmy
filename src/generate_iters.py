@@ -7,14 +7,14 @@ type = [0,1,2]
 
 # vary size
 nmito = [ 10, 20, 30, 40 ]
-nmito_error = [ 0, 5, 10 ]
+nmito_error = [ 1, 5, 10 ]
 
 # ascus intercept
 intercept = [ 0.05, 0.1, 0.25, 0.5 ]
 
 nreplicates = 200;
 
-exe = "./yeast_unequal_ascus"
+exe = "/home/uccoaku/yeast_heteroplasmy/src/xyeast_unequal_ascus"
 
 count = 0
 

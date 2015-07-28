@@ -279,7 +279,7 @@ void cross_and_grow()
     // grow colonies from each spore
     for (size_t spore_i = 0; spore_i < 4; ++spore_i)
     {
-        cout << "running spore " << spore_i << endl;
+        //cout << "running spore " << spore_i << endl;
         // add the spore as the initial member of the population
         Pop.insert(
                 Pop.end(), 
@@ -296,7 +296,7 @@ void cross_and_grow()
         // now execute duplication (after selection) of each individual cell 
         for (int generation = 1; generation < 26; ++generation)
         {
-            cout << "generation: " << generation << " " << popsize << endl;
+            //cout << "generation: " << generation << " " << popsize << endl;
             size_t popsize_new = popsize;
 
             for (size_t i = 0; i < popsize; ++i)
