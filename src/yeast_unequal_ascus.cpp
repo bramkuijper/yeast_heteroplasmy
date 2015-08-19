@@ -136,25 +136,6 @@ void make_tetrad(Individual *ascus, size_t ascus_size)
 
     nMito_total = nMito_total*2;
 
-    // draw three random numbers, the relative values of those
-    // determine the number of mitochondria going to each spore
-    // see http://stackoverflow.com/questions/8064629/random-numbers-that-add-to-100-matlab/8068956#8068956 
-    int nmito_tetrad[4];
-
-    for (size_t i = 0; i < 3; ++i)
-    {
-        nmito_tetrad[i] = gsl_rng_uniform_int(r, nMito_total);
-
-    }
-
-    // the last number is the total number of mitochondria that are going to be distributed
-    nmito_tetrad[3] = nMito_total;
-
-    // sort the numbers in accumulating order
-    qsort(nmito_tetrad, 4, sizeof(int), compare);
-
-    // var to remember the last number of mitochondria to be transmitted
-
     // now create ascus through random sampling
     for (size_t i = 0; i < ascus_size; ++i)
     {
@@ -185,27 +166,32 @@ double selection(size_t const nMito, size_t const nMut)
 
     if (type == 0)
     {
+        // selection against heteroplasmy (e.g., see 
+        // Christie, Schaerf & Beekman (2015) PLoS Genet. 11: e1005112.
         val = nMut < .5 * nMito ? 
                 1.0 - ch * 2.0 * nMut / nMito * 2.0 * nMut / nMito
                 :
                 1.0 - ch * 2.0 * (nMito - nMut) / nMito * 2.0 * (nMito - nMut) / nMito;
     } else if (type == 1)
     {
+        // selection favoring non-nMut mitochodnria
         val = 1.0 - ch * pow((double) nMut / nMito,2);
     } else 
     {
+        // selection favoring heteroplasmy
         val = nMut < .5 * nMito ? 
                 1.0 - ch * (1.0 -  2.0 * nMut / nMito * 2.0 * nMut / nMito)
                 :
                 1.0 - ch * (1.0 - 2.0 * (nMito - nMut) / nMito * 2.0 * (nMito - nMut) / nMito);
     }
 
-    // selection against heteroplasmy
     return(val);
 }
 
+// create an offspring cell
 void create_kid(Individual &parent, Individual &kid)
 {
+    // determine number of mitochondria in offspring
     kid.nMito = nMito_min
         + (gsl_rng_uniform(r) < 0.5 ? -1.0 : 1.0) * gsl_rng_uniform_int(r, nMito_error);
 
